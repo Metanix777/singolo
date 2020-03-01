@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    width: 1020px;
+    height: 100vh;
+    margin: auto;
+    color: #666d89;
+    background: #000;
+    font-family: 'Lato Light', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.portfolio {
+    height: 785px;      /*865*/
+    background: #2d303a;
+    padding: 40px 40px;
+}
+
+.section {
+    font-family: "Lato Black";
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section-text {
+    margin-bottom: 10px;
+    font-size: 17.5px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.portfolio .section-text{
+    margin-bottom: 8px;
+}
+
+.bt-navigate {
+    height: 22px;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0);
+    color: #666d89;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+
+.bt-navigate:hover, .bt-active{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.img-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.img-block>div {
+    width: 220px;
+    height: 187px;
+    overflow: hidden;
+}
+
+img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    height:5px;
+    background: #323746;
+}
+
+/* About Us */
+
+.about {
+    height: 660px; /*730*/
+    background: #f2f2f2;
+    padding: 35px 40px;
+}
+
+.about .section-text {
+    padding-top: 5px;
+}
+
+.human {
+    font-family: "Lato Black";
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.human-text {
+    font-family: "Lato Regular";
+    font-size: 12px;
+    text-align: justify;
+}
+
+.grid-human {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 303px 303px 303px;
+    grid-gap: 16px;
+}
+
+.network {
+    display: inline-block;
+    margin-right: 4px;
+    padding-top: 10px;
+}
+
+.line-white {
+    height:5px;
+    background: #fff;
+
+}
+
+.about .section-text {
+    margin-bottom: 43px;
+}
+
+
+
