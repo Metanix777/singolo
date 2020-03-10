@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    width: 1020px;
+    height: 100vh;
+    margin: auto;
+    color: #666d89;
+    background: #000;
+    font-family: 'Lato Light';
+    font-size: 18px;
+}
+
+header {
+    width: 1020px;
+    height: 90px;
+    background: #2d303a;
+    display: inline-block;
+}
+
+.logo {
+    color: #fff;
+    float: left;
+    margin: 30px 40px;
+    font-size: 25px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+menu li a:hover {
+    color: #f06c64;
+}
+
+menu li {
+    display: inline;
+    margin-right: 25px;
+}
+
+menu {
+    position: absolute;
+    vertical-align: center;
+    margin-left:530px;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+.line-header {
+    height: 5px;
+    background: #323746;
+    margin-top: 90px;
+}
+
+.line-slider {
+    height:5px;
+    background: #ea676b;
+}
+
+.line-main {
+    height:5px;
+    background: #fff;
+}
+
+.red-color {
+    color: #f06c64;
+}
+
+/* Slider */
+
+.slider {
+    display: grid;
+    grid-template-columns: 1fr 4fr 8fr 1fr;
+    padding: 35px 40px;
+    height: 525px;
+    background: #f06c64;
+}
+
+.slider img, .slider a {
+    margin: auto 0;
+}
+
+.phone-horisontal, .chev-2 {
+    justify-self: end;
+    padding-right: 4px;
+    padding-bottom: 5px;
+}
+
+.phone-vertical { 
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* Services */
+
+h1 {
+    font-family: 'Lato Black';
+    font-size: 30px;
+}
+
+.text-services {
+    margin-top: 15px;
+    line-height: 30px;
+    color: #767e9e;
+    letter-spacing: -0.1px;
+}
+
+.main-cont {
+    background: #f2f2f2;
+    padding: 40px 40px 55px 40px;
+    font-size: 18px;
+}
+
+.container {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, [col] 1fr);
+    grid-gap: 25px;
+}
+
+.element {
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+
+
+.element p {
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 0em;
+    color: #767e9e
+}
+
+.element h2 {
+    padding-left: 5px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.item h2 {
+    font-family: 'Lato Black';
+}
+
+
+/*=============================== Singolo2 ===================================*/
+
+.portfolio {
+    height: 785px;     
+    background: #2d303a;
+    padding: 40px 40px;
+}
+
+.section {
+    font-family: "Lato Black";
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.section-text {
+    margin-bottom: 10px;
+    font-size: 17.5px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.portfolio .section-text{
+    margin-bottom: 8px;
+}
+
+.bt-navigate {
+    height: 22px;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0);
+    color: #666d89;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+
+.bt-navigate:hover, .bt-active{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.img-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.img-block>div {
+    width: 220px;
+    height: 187px;
+    overflow: hidden;
+}
+
+.img-portfolio {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-portfolio {
+    height:5px;
+    background: #323746;
+}
+
+/* About Us */
+
+.about {
+    height: 650px; 
+    background: #f2f2f2;
+    padding: 40px 40px 40px 40px;
+}
+
+.about .section-text {
+    /*padding-top: 5px;*/
+}
+
+.human {
+    font-family: "Lato Black";
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.human-text {
+    font-family: "Lato Regular";
+    font-size: 12px;
+    text-align: justify;
+}
+
+.grid-human {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 303px 303px 303px;
+    grid-gap: 16px;
+}
+
+.grid-human .network {
+    padding-top: 17px;
+}
+
+.network {
+    display: inline-block;
+    margin-right: 4px;
+    padding-top: 10px;
+}
+
+.line-white {
+    height:5px;
+    background: #fff;
+
+}
+
+.about .section-text {
+    margin-bottom: 43px;
+}
+
+
+/*============================================ Singolo3 =========================================*/
+
+.quote {
+    height: 580px;
+    background: #f06c64;
+    padding: 30px 40px 38px 40px;
+    color: #eed9d8;
+}
+
+.section-quote {
+    font-family: "Lato Black";
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.section-text {
+    margin-bottom: 10px;
+    font-size: 17.5px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.form-elem, .contact, .form-elem-big {
+    font-family: "Lato Regular";
+    font-size: 0.65em;
+    text-align: justify;
+}
+
+.form-elem {
+    display: block;
+    width: 590px;
+    height:20px;
+    background: #d6564f;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 0;
+    padding: 10px 15px;
+}
+
+.form-elem-big {
+    width: 590px;
+    height: 180px;
+    background: #d6564f;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
+
+.bt-submit {
+    height: 30px;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.form-elem::placeholder, .form-elem-big::placeholder {
+    color: #f48c8f;
+}
+
+.name_user:invalid {
+    background: red;
+}
+
+.email_adres:invalid {
+    background: red;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding-top: 15px;
+}
+
+.contact-inf {
+    font-family: "Lato Black";
+    font-size: 18px; 
+    margin-bottom: 0;
+}
+
+.contact-text {
+    word-wrap: normal;
+    margin-top: 6px;
+    margin-bottom: 22px;
+    line-height: 22px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
+.contact-footer {
+    display: grid;
+    grid-template-columns: 15px 200px;
+    grid-gap: 2px 9px;
+    line-height: 20px;
+}
+
+.contact img {
+    margin: auto;
+}
+
+.line {
+    height:5px;
+    background: #ea676b;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75px;
+    background: #2d303a;
+    padding: 0 40px;
+}
+
+.footer-copyright {
+    margin: auto 0;
+    color: #666d89;
+    font-size: 12px;
+}
+
+.footer-network {
+    text-align: right;
+    margin: auto 0;
+}
+
+
+
+
+
