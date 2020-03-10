@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    width: 1020px;
+    height: 100vh;
+    margin: 0 auto;
+    color: #f0d8d9;
+    background: #000;
+    font-family: 'Lato Light';
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.quote {
+    height: 575px;
+    background: #f06c64;
+    padding: 38px 40px;
+}
+
+.section {
+    font-family: "Lato Black";
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section-text {
+    margin-bottom: 10px;
+    font-size: 17.5px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.form-elem, .contact, .form-elem-big {
+    font-family: "Lato Regular";
+    font-size: 0.65em;
+    text-align: justify;
+}
+
+.form-elem {
+    display: block;
+    width: 590px;
+    height:20px;
+    background: #d6564f;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 0;
+    padding: 10px 15px;
+}
+
+.form-elem-big {
+    width: 590px;
+    height: 180px;
+    background: #d6564f;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
+
+.bt-submit {
+    height: 30px;
+    font-family: "Lato Regular";
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.form-elem::placeholder, .form-elem-big::placeholder {
+    color: #f48c8f;
+}
+
+.name_user:invalid {
+    background: red;
+}
+
+.email_adres:invalid {
+    background: red;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding-top: 15px;
+}
+
+.contact-inf {
+    font-family: "Lato Black";
+    font-size: 18px; 
+    margin-bottom: 0;
+}
+
+.contact-text {
+    word-wrap: normal;
+    margin-top: 6px;
+    margin-bottom: 22px;
+    line-height: 22px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
+.contact-footer {
+    display: grid;
+    grid-template-columns: 15px 200px;
+    grid-gap: 2px 9px;
+}
+
+.contact img {
+    margin: auto;
+}
+
+.line {
+    height:5px;
+    background: #ea676b;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75px;
+    background: #2d303a;
+    padding: 0 40px;
+}
+
+.footer-copyright {
+    margin: auto 0;
+    color: #666d89;
+    font-size: 12px;
+}
+
+.footer-network {
+    text-align: right;
+    margin: auto 0;
+}
+
+.footer-network div {
+    display: inline;
+    margin-left: 3px;
+}
+
+
