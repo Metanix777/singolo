@@ -11,27 +11,38 @@
     <header>
         <div class="logo"><span>SINGOLO</span><span class="red-color">*</span></div>
         <menu>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
+            <ul id="menu">
+                <li><a class="active" href="">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#quote">CONTACT</a></li>
             </ul>
         </menu>
         <div class="line-header"></div>
     </header>
 
     <div class="slider">
-        <a href=""><img class="chev-1" src="assets/image/chev-1.png" alt=""></a>
-        <img class="phone-vertical" src="assets/image/phone-vertical.png" alt="">
-        <img class="phone-horisontal" src="assets/image/phone-gorisontal.png" alt="">
-        <a class="chev-2" href=""><img src="assets/image/chev-2.png" alt=""></a>
+        <div class="slide-content fade">
+            <div class="offscreen1" style="display: none;"></div>
+            <div class="offscreen2" style="display: none;"></div>
+            <div class="phone-button1"></div>
+            <div class="phone-button2"></div>
+            <img class="phone-vertical" src="assets/image/phone-vertical.png" alt="">
+            <img class="phone-horisontal" src="assets/image/phone-gorisontal.png" alt="">   
+        </div>
+        <div class="slide-content fade">
+            <div class="offscreen3" style="display: none;"></div>
+            <div class="phone-button3"></div>
+            <img class="phone-slider2" src="assets/image/phone-slide2.png" alt="" >
+        </div>
+        <a class="chev prev" onclick="plusSlides(-1)"><img src="assets/image/chev-1.png" alt=""></a>
+        <a class="chev next" onclick="plusSlides(1)"><img src="assets/image/chev-2.png" alt=""></a>
     </div>
     <div class="line-slider"></div>
 
     <main>
-        <div class="main-cont">
+        <div id="services" class="main-cont">
             <h1>Our Services</h1>
             <p class="text-services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum ni</p>
             <section class="container">
@@ -81,36 +92,36 @@
         </div>
             <div class="line-main"></div>
 
-            <section class="portfolio">
+            <section id="portfolio">
                 <p class="section">Portfolio</p>
                 <p class="section-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 
                 <div class="portfolio-navigate">
-                    <input class="bt-navigate bt-active" type="button" value="All">
-                    <input class="bt-navigate" type="button" value="Web Design">
-                    <input class="bt-navigate" type="button" value="Graphic Design">
-                    <input class="bt-navigate" type="button" value="Artwork">    
+                    <input class="bt-navigate bt1 bt-active" type="button" value="All">
+                    <input class="bt-navigate bt2" type="button" value="Web Design">
+                    <input class="bt-navigate bt3" type="button" value="Graphic Design">
+                    <input class="bt-navigate bt4" type="button" value="Artwork">    
                 </div>   
                 
-                <div class="img-block">
-                    <div><img class="img-portfolio" src="assets/image/portfolio1.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio2.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio3.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio4.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio5.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio6.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio7.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio8.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio9.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio10.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio11.png" alt=""></div>
-                    <div><img class="img-portfolio" src="assets/image/portfolio12.png" alt=""></div>
+                <div class="img-block" id="portfolio-block">
+                    <div class="img-portfolio"><img src="assets/image/portfolio1.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio2.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio3.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio4.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio5.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio6.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio7.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio8.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio9.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio10.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio11.png" alt=""></div>
+                    <div class="img-portfolio"><img src="assets/image/portfolio12.png" alt=""></div>
                 </div>
             </section>
     
             <div class="line-portfolio"></div>
     
-            <section class="about">
+            <section id="about">
                 <p class="section">About Us</p>
                 <p class="section-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="grid-human">
@@ -145,17 +156,17 @@
             </section>
             <div class="line-white"></div>
 
-            <section class="quote">
+            <section id="quote">
                 <p class="section-quote">Get a Quote</p>
                 <p class="section-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="contact-form">
                     <form action="/login" method="POST">
                         <input class="form-elem name_user" type="text" name="name_user" placeholder="Name (Required)" pattern="\w+"> 
                         <input class="form-elem email_adres" type="email" name="email_adres" placeholder="Email (Required)">
-                        <input class="form-elem" type="text" name="subject" placeholder="Subject">
-                        <textarea class="form-elem-big" name="detail" placeholder="Describe your project in detail..."></textarea>
+                        <input class="form-elem subject" type="text" name="subject" placeholder="Subject">
+                        <textarea class="form-elem-big detail" name="detail" placeholder="Describe your project in detail..."></textarea>
                        
-                        <input class="bt-submit" type="submit" value="Submit">
+                        <input class="bt-submit" id="submit-form" type="submit" value="Submit">
                     </form>
                     <div class="contact">
                         <p class="contact-inf">Contact Information</p>
@@ -182,6 +193,6 @@
         </div>
     </footer>
     
-
+<script src="script.js"></script>
 </body>
 </html>

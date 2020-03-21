@@ -33,6 +33,14 @@ menu li a:hover {
     color: #f06c64;
 }
 
+menu ul li a.active {
+    color: #f06c64;
+}
+
+menu ul li a:not(.active):hover {
+    color: #f06c64;
+}
+
 menu li {
     display: inline;
     margin-right: 25px;
@@ -70,28 +78,120 @@ menu {
 /* Slider */
 
 .slider {
-    display: grid;
-    grid-template-columns: 1fr 4fr 8fr 1fr;
-    padding: 35px 40px;
-    height: 525px;
+    position: relative;
     background: #f06c64;
+    height: 595px;
+    margin: auto;
+}
+  
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin: auto 40px;
+    top: 50%;
+    margin-top: -22px;
+    transition: 0.6s ease;
 }
 
-.slider img, .slider a {
-    margin: auto 0;
+.next {
+    right: 0;
 }
 
-.phone-horisontal, .chev-2 {
-    justify-self: end;
-    padding-right: 4px;
-    padding-bottom: 5px;
+.slide-content {
+    padding: 50px 110px;
 }
 
-.phone-vertical { 
-    padding-left: 5px;
-    padding-bottom: 5px;
+.slide-content .blue{
+    background: #648bf0;
 }
 
+.phone-horisontal {
+    padding-left: 70px;
+    padding-bottom: 120px;
+}
+
+.phone-slider2 {
+    padding-left: 140px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+@keyframes fade {
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+
+.phone-button1 {
+    cursor: pointer;
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    margin-top: 407px;
+    margin-left: 85px;
+    border-radius: 50%;
+}
+
+.phone-button2 {
+    cursor: pointer;
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    margin-top: 210px;
+    margin-left: 323px;
+    border-radius: 50%;
+}
+  
+.phone-button3 {
+    cursor: pointer;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-top: 433px;
+    margin-left: 365px;
+}
+
+.offscreen1 {
+    position: absolute;
+    height: 334px;
+    width: 190px;
+    margin-top: 65px;
+    margin-left: 13px;
+    border-radius: 4px;
+    background: black;
+}
+
+.offscreen2 {
+    position: absolute;
+    height: 190px;
+    width: 335px;
+    margin-top: 136px;
+    margin-left: 374px;
+    border-radius: 4px;
+    background: black;
+}
+  
+.offscreen3 {
+    background: black;
+    position: absolute;
+    display: block;
+    width: 202px;
+    margin-left: 285px;
+    margin-top: 68px;
+    height: 356px;
+    border-radius: 4px;
+}
+  
 
 /* Services */
 
@@ -149,7 +249,7 @@ h1 {
 
 /*=============================== Singolo2 ===================================*/
 
-.portfolio {
+#portfolio {
     height: 785px;     
     background: #2d303a;
     padding: 40px 40px;
@@ -168,7 +268,7 @@ h1 {
     text-align: justify;
 }
 
-.portfolio .section-text{
+#portfolio .section-text{
     margin-bottom: 8px;
 }
 
@@ -185,27 +285,26 @@ h1 {
 }
 
 
-.bt-navigate:hover, .bt-active{
+.bt-navigate:hover, .portfolio-navigate .bt-active{
     color: #fff;
     border: 1px solid #fff;
 }
 
 .img-block {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(3, 187px);
     grid-gap: 20px;
-}
-
-.img-block>div {
-    width: 220px;
-    height: 187px;
     overflow: hidden;
 }
 
-.img-portfolio {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+.img-block div img.active {
+    position: absolute;
+    outline: #f06c64 solid 5px;
+}
+
+.last-item {
+    order: -1;
 }
 
 .line-portfolio {
@@ -215,15 +314,12 @@ h1 {
 
 /* About Us */
 
-.about {
+#about {
     height: 650px; 
     background: #f2f2f2;
     padding: 40px 40px 40px 40px;
 }
 
-.about .section-text {
-    /*padding-top: 5px;*/
-}
 
 .human {
     font-family: "Lato Black";
@@ -260,14 +356,14 @@ h1 {
 
 }
 
-.about .section-text {
+#about .section-text {
     margin-bottom: 43px;
 }
 
 
 /*============================================ Singolo3 =========================================*/
 
-.quote {
+#quote {
     height: 580px;
     background: #f06c64;
     padding: 30px 40px 38px 40px;
