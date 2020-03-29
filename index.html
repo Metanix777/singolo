@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo"><span>SINGOLO</span><span class="red-color">*</span></div>
-        <menu>
+        <menu class="navigation">
             <ul id="menu">
                 <li><a class="active" href="">HOME</a></li>
                 <li><a href="#services">SERVICES</a></li>
@@ -22,29 +22,30 @@
         <div class="line-header"></div>
     </header>
 
-    <div class="slider">
-        <div class="slide-content fade">
-            <div class="offscreen1" style="display: none;"></div>
-            <div class="offscreen2" style="display: none;"></div>
-            <div class="phone-button1"></div>
-            <div class="phone-button2"></div>
-            <img class="phone-vertical" src="assets/image/phone-vertical.png" alt="">
-            <img class="phone-horisontal" src="assets/image/phone-gorisontal.png" alt="">   
-        </div>
-        <div class="slide-content fade">
-            <div class="offscreen3" style="display: none;"></div>
-            <div class="phone-button3"></div>
-            <img class="phone-slider2" src="assets/image/phone-slide2.png" alt="" >
-        </div>
-        <a class="chev prev" onclick="plusSlides(-1)"><img src="assets/image/chev-1.png" alt=""></a>
-        <a class="chev next" onclick="plusSlides(1)"><img src="assets/image/chev-2.png" alt=""></a>
-    </div>
-    <div class="line-slider"></div>
+
 
     <main>
+        <div class="slider">
+            <div class="slide-content fade">
+                <div class="offscreen1" style="display: none;"></div> 
+                <div class="offscreen2" style="display: none;"></div>
+                <div class="phone-button1"></div>
+                <div class="phone-button2"></div>
+                <img class="phone-vertical" src="assets/image/phone-vertical.png" alt="">
+                <img class="phone-horisontal" src="assets/image/phone-gorisontal.png" alt="">   
+            </div>
+            <div class="slide-content fade">
+                <div class="offscreen3" style="display: none;"></div>
+                <div class="phone-button3"></div>
+                <img class="phone-slider2" src="assets/image/phone-slide2.png" alt="" >
+            </div>
+            <a class="chev prev" onclick="plusSlides(-1)"><img src="assets/image/chev-1.png" alt=""></a>
+            <a class="chev next" onclick="plusSlides(1)"><img src="assets/image/chev-2.png" alt=""></a>
+        </div>
+        <div class="line-slider"></div>
         <div id="services" class="main-cont">
             <h1>Our Services</h1>
-            <p class="text-services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum ni</p>
+            <p class="text-services">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <section class="container">
                 <section class="element">
                     <img src="assets/image/service1.png" alt="">
@@ -126,7 +127,7 @@
                 <p class="section-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="grid-human">
                     <div>
-                        <img src="assets/image/about1.png" alt="">
+                        <img class="about-photo" src="assets/image/about1.png" alt="">
                         <p class="human">Adam Jensen</p>
                         <p class="human-text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                         <div class="network"><a href=""><img src="assets/image/facebook.png" alt="facebook"></a></div>
@@ -135,7 +136,7 @@
                         <div class="network"><a href=""><img src="assets/image/linkedin.png" alt="linkedin"></a></div>
                     </div>
                     <div>
-                        <img src="assets/image/about2.png" alt="">
+                        <img class="about-photo" src="assets/image/about2.png" alt="">
                         <p class="human">Desmond Miles</p>
                         <p class="human-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         <div class="network"><a href=""><img src="assets/image/facebook.png" alt="facebook"></a></div>
@@ -144,7 +145,7 @@
                         <div class="network"><a href=""><img src="assets/image/linkedin.png" alt="linkedin"></a></div>
                     </div>
                     <div>
-                        <img src="assets/image/about3.png" alt="">
+                        <img class="about-photo" src="assets/image/about3.png" alt="">
                         <p class="human">Scolara Visari</p>
                         <p class="human-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                         <div class="network"><a href=""><img src="assets/image/facebook.png" alt="facebook"></a></div>
@@ -184,12 +185,14 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-copyright">&copy; Copyright 2013</div>
-        <div class="footer-network">
-            <div class="network"><a href=""><img src="assets/image/facebook.png" alt="facebook"></a></div>
-            <div class="network"><a href=""><img src="assets/image/google.png" alt="google"></a></div>
-            <div class="network"><a href=""><img src="assets/image/twitter.png" alt="twitter"></a></div>
-            <div class="network"><a href=""><img src="assets/image/linkedin.png" alt="linkedin"></a></div>
+        <div class="footer-content">
+            <div class="footer-copyright">&copy; Copyright 2013</div>
+            <div class="footer-network">
+                <div class="network"><a href=""><img src="assets/image/facebook.png" alt="facebook"></a></div>
+                <div class="network"><a href=""><img src="assets/image/google.png" alt="google"></a></div>
+                <div class="network"><a href=""><img src="assets/image/twitter.png" alt="twitter"></a></div>
+                <div class="network"><a href=""><img src="assets/image/linkedin.png" alt="linkedin"></a></div>
+            </div>
         </div>
     </footer>
     

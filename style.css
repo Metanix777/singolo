@@ -15,6 +15,7 @@ header {
     height: 90px;
     background: #2d303a;
     display: inline-block;
+    margin: 0;
 }
 
 .logo {
@@ -47,11 +48,12 @@ menu li {
 }
 
 menu {
-    position: absolute;
+    position: relative;
     vertical-align: center;
-    margin-left:530px;
+    margin-right:20px;
     margin-top: 30px;
     font-size: 12px;
+    float: right;
 }
 
 
@@ -253,6 +255,7 @@ h1 {
     height: 785px;     
     background: #2d303a;
     padding: 40px 40px;
+    overflow: hidden;
 }
 
 .section {
@@ -474,10 +477,15 @@ h1 {
 
 
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     height: 75px;
     background: #2d303a;
+    /*padding: 0 40px;*/
+}
+
+.footer-content {
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 0 40px;
 }
 
@@ -493,6 +501,203 @@ h1 {
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+    body {width: 768px; margin: 0 auto;}
+    .slider {
+        height: 450px;
+    }
+    .slide-content {
+        padding: 50px 95px;
+    }
+    .phone-vertical {
+        height: 360px;
+    }
+    .phone-horisontal {
+        width: 360px;
+        padding-left: 34px;
+        padding-bottom: 95px;
+    }
+    .phone-slider2 {
+        height:360px;
+        padding-left: 120px;
+    }
 
+    .phone-button1 {
+        width: 30px;
+        height: 30px;
+        margin-top: 305px;
+        margin-left: 65px;
+    }
+    
+    .phone-button2 {
+        width: 30px;
+        height: 30px;
+        margin-top: 150px;
+        margin-left: 223px;
+    }
+      
+    .phone-button3 {
+        width: 30px;
+        height: 30px;
+        margin-top: 307px;
+        margin-left: 277px;
+    }
+    
+    .offscreen1 {
+        height: 254px;
+        width: 145px;
+        margin-top: 45px;
+        margin-left: 7px;
+    }
+    
+    .offscreen2 {
+        height: 145px;
+        width: 254px;
+        margin-top: 96px;
+        margin-left: 260px;
+    }
+      
+    .offscreen3 {
+        width: 145px;
+        margin-left: 220px;
+        margin-top: 48px;
+        height: 254px;
+    }
+
+    
+    .container {
+        grid-template-columns: repeat(2, [col] 1fr);
+    }
+
+    #portfolio {
+        height: 1000px;     
+    }
+    .img-block {
+        grid-template-columns: repeat(3, 220px);
+        grid-template-rows: repeat(4, 187px);
+    }
+
+    .grid-human {
+        grid-template-columns: 219px 219px 219px;
+    }
+    .grid-human .about-photo {
+        width: 219px;
+    }
+
+    .form-elem, .form-elem-big {
+        width: 410px;
+    }
+    .contact-form {
+        grid-template-columns: 440px 220px;
+        grid-gap: 28px;
+    }
+    .contact-text {
+        width: 220px;
+    }
+
+
+    header, main, footer {
+        width: 768px;
+    }
+}
+
+
+@media screen  and (max-width: 767px) {
+    .slider {
+        height: 220px;
+    }
+    
+    .prev, .next {
+        margin: auto 10px;
+    }
+
+    .slide-content {
+        padding: 25px 40px;
+    }
+    .phone-vertical {
+        height: 177px;
+    }
+    .phone-horisontal {
+        width: 177px;
+        padding-left: 25px;
+        padding-bottom: 40px;
+    }
+    .phone-slider2 {
+        height:177px;
+        padding-left: 65px;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    #portfolio {
+        height: 765px;     
+    }
+    .img-block {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(4, 128px);
+        grid-gap: 15px;
+    }
+
+    .img-portfolio img {
+        width: 150px;
+    }
+
+    #about {
+        height: 1670px;
+    }
+
+    .grid-human {
+        grid-template-columns: 315px;
+    }
+    .grid-human .about-photo {
+        width: 315px;
+    }
+
+    .human-text {
+        font-family: "Lato";
+        line-height: 22px;
+    }
+    .grid-human .network {
+        padding-top: 0;
+    }
+
+    #quote {
+        height: 900px;
+    }
+    .form-elem, .form-elem-big {
+        width: 285px;
+    }
+    .contact-form {
+        grid-template-columns: 315px;
+        grid-gap: 0px;
+    }
+    .contact-text {
+        width: 315px;
+    }
+
+    .footer-copyright {
+        display: none;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .footer-network {
+        text-align: center;
+    }
+
+
+    body, header, main, footer {
+        width: 375px;
+    }
+
+    #services, #portfolio, #about, #quote {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+
+}
 
 
