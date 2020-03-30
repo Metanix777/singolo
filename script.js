@@ -137,5 +137,35 @@ function validateEmail(email)
 }
 
 
+const burger = document.querySelector(".burger");
+const burgerMenu = document.querySelector(".burger_menu");
+const burger_active = document.querySelector(".burger_active")
+const logo = document.querySelector(".logo_burger");
+
+burger.addEventListener('click', ()=>{
+    burgerMenu.style.display = "block";
+    burger_active.style.display = "block";
+    burger.style.display = "none";
+    logo.style.display = "block";
+});
+
+burger_active.addEventListener('click', ()=>{
+    burgerMenu.style.display = "none";
+    burger_active.style.display = "none";
+    burger.style.display = "block";
+    logo.style.display = "none";
+});
+
+burgerMenu.addEventListener('click', ()=>{
+    burgerMenu.style.display = "none";
+    burger_active.style.display = "none";
+    burger.style.display = "block";
+    logo.style.display = "none";
+});
+
+
+
+
+
 
 

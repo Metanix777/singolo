@@ -18,11 +18,23 @@ header {
     margin: 0;
 }
 
-.logo {
+.burger, .burger_menu, .burger_menu ul {
+    display: none;
+}
+
+.logo  {
     color: #fff;
     float: left;
     margin: 30px 40px;
     font-size: 25px;
+}
+
+.logo_burger {
+    position:absolute;
+    color: #fff;
+    font-size: 25px;
+    padding: 30px 100px;
+    z-index: 2;
 }
 
 li a {
@@ -603,6 +615,58 @@ h1 {
 
 
 @media screen  and (max-width: 767px) {
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        padding-left: 100px;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        margin: 20px;
+        z-index: 1;
+    }
+
+    .burger_active {
+        position: absolute;
+        margin: 20px;
+        z-index: 2;
+    }
+
+    .burger_menu {
+        position: absolute;
+        width: 280px;
+        height: 100%;
+        background: #2D303A;
+        z-index: 1;
+    }
+    
+    .burger_menu ul{
+        display:block;
+        list-style-type: none;
+        padding: 210px 70px;
+        line-height: 60px;
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.035em;
+    }
+
+    .burger_menu li a:hover {
+        color: #f06c64;
+    }
+    
+    .burger_menu ul li a.active {
+        color: #f06c64;
+    }
+    
+    .burger_menu ul li a:not(.active):hover {
+        color: #f06c64;
+    }
+
     .slider {
         height: 220px;
     }
